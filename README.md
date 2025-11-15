@@ -77,6 +77,9 @@ DATABASE_URL="your-postgres-connection-url"
 
 This will create the database tables according to your schema.
 
+Although for this project Prisma was not used because it requires a direct Postgres connection and full database privileges, which were limited on Supabase’s free tier.
+Instead, Supabase’s JavaScript client handles authentication and all task CRUD operations, providing a fully functional backend.
+
 5. Run the project locally
    npm run dev
 
