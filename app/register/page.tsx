@@ -33,9 +33,7 @@ export default function Register() {
     if (error) {
       alert(error.message);
     } else {
-      alert(
-        "Registration successful! Please check your email to confirm your account."
-      );
+      alert("Registration successful!");
       router.push("/login");
     }
   };
@@ -68,11 +66,10 @@ export default function Register() {
           className="absolute right-3 top-2.5 cursor-pointer"
           onClick={() => setShowPassword(!showPassword)}
         >
-          {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+          {showPassword ? <Eye size={20} /> : <EyeOff size={20} />}
         </span>
       </div>
 
-      {/* Confirm password field with show/hide */}
       <div className="relative w-80 mb-2">
         <input
           type={showConfirmPassword ? "text" : "password"}
@@ -85,7 +82,7 @@ export default function Register() {
           className="absolute right-3 top-2.5 cursor-pointer"
           onClick={() => setShowConfirmPassword(!showConfirmPassword)}
         >
-          {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+          {showConfirmPassword ? <Eye size={20} /> : <EyeOff size={20} />}
         </span>
       </div>
 

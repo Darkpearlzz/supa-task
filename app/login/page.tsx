@@ -48,7 +48,7 @@ export default function Login() {
           className="absolute right-3 top-3 cursor-pointer"
           onClick={() => setShowPassword(!showPassword)}
         >
-          {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+          {showPassword ? <Eye size={20} /> : <EyeOff size={20} />}
         </span>
       </div>
 
