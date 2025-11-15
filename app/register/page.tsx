@@ -42,6 +42,9 @@ export default function Register() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-3xl font-extrabold mb-12 text-center">
+        Welcome to Supa Task: Your Task Manager
+      </h1>
       <h1 className="text-2xl font-bold mb-4">Register</h1>
 
       <input
